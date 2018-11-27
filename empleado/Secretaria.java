@@ -2,11 +2,9 @@ package empleado;
 
 import java.util.GregorianCalendar;
 
+public class Secretaria extends Empleado {
 
-
-    public class Secretaria extends Empleado{
-   
-private String telefonoMovil;
+    private String telefonoMovil;
 
     public Secretaria(String telefonoMovil, String nombre, GregorianCalendar inicioTrabajo, GregorianCalendar fechaNacimiento, String titulacion) {
         super(nombre, inicioTrabajo, fechaNacimiento, titulacion);
@@ -26,6 +24,4 @@ private String telefonoMovil;
         return "Secretaria{" + "telefonoMovil=" + telefonoMovil + '}';
     }
 
-
 }
-

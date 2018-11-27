@@ -7,11 +7,14 @@ import java.util.GregorianCalendar;
  * @author emendezduran
  */
 public class Empleado {
-        
-        private String nombre;
-        private GregorianCalendar inicioTrabajo;
-        private GregorianCalendar fechaNacimiento;
-        private String titulacion;
+
+    private String nombre;
+    private GregorianCalendar inicioTrabajo;
+    private GregorianCalendar fechaNacimiento;
+    private String titulacion;
+
+    public Empleado() {
+    }
 
     public Empleado(String nombre, GregorianCalendar inicioTrabajo, GregorianCalendar fechaNacimiento, String titulacion) {
         this.nombre = nombre;
@@ -54,11 +57,11 @@ public class Empleado {
 
     @Override
     public String toString() {
-        return "Empleado:\n" + "nombre=" + nombre + "\ninicioTrabajo=" + inicioTrabajo.getTime()+ "\nfechaNacimiento=" + fechaNacimiento.getTime() + "\ntitulacion=" + titulacion + '}';
+        return "Empleado:\n" + "nombre=" + nombre + "\ninicioTrabajo=" + inicioTrabajo.getTime() + "\nfechaNacimiento=" + fechaNacimiento.getTime() + "\ntitulacion=" + titulacion + '}';
     }
-        
-      public void calcularSueldo(){
-          System.out.println("Resultado del Calculo de Sueldo");
+
+    public void calcularSueldo() {
+        System.out.println("Resultado del Calculo de Sueldo");
     }
-    
+
 }
